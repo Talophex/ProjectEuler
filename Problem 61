@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Dec 10 20:15:49 2016
+
+@author: Lucas
+"""
+
+import lucaslib
+import math
+
+def triangle(n):
+    return n*(n+1)/2
+
+def square(n):
+    return n**2
+
+def pentagonal(n):
+    return (n*(3*n-1)/2)
+    
+def hexagonal(n):
+    return n*(2*n-1)
+
+def octagonal(n):
+    return n*(3*n-2)
+
+FourDigTri = []
+
+for i in xrange(1,10):
+    if len(str(triangle(i))) == 4:
+        FourDigTri.append(str(triangle(i)))
+        
+print FourDigTri
